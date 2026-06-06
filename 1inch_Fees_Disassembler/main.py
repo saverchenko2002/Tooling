@@ -3,7 +3,6 @@ from eth_utils import to_bytes
 
 BASE_1E2 = 100
 
-
 def parse_fee_data(extra_data_hex: str):
     # убираем 0x если есть
     extra_data_hex = extra_data_hex.removeprefix("0x")
@@ -40,7 +39,7 @@ def parse_fee_data(extra_data_hex: str):
     }
 
 
-extra_data = "0x00000000326406b09498030ae3416b66dc74db31d09524fa87b1f76ea9a11ae13b29f5c555d18bd45f0b94f54a968fc90ed87a54c23dc480b395770895ad27ad6b0d95"
+extra_data = "00000001f43206b09498030ae3416b66dc74db31d09524fa87b1f7d18bd45f0b94f54a968fc90ed87a54c23dc480b395770895ad27ad6b0d956ea9a11ae13b29f5c555"
 
 parsed = parse_fee_data(extra_data)
 
